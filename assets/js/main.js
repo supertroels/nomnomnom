@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 	.find('#cookie-accept')
 	.click(function(event){
 		event.preventDefault();
-		$.cookie('wp_accepted_cookies', 'yes');
+		$.cookie('wp_accepted_cookies', 'yes', {path: '/'});
 		pop.addClass('accepted');
 	})
 
