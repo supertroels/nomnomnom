@@ -18,10 +18,8 @@ class nom3 {
     }
 
     function hooks(){
-        if($_COOKIE['wp_accepted_cookies'] !== 'yes'){
-            add_action('wp_enqueue_scripts', array($this, 'enqueue_assets'));
-            add_action('wp_footer', array($this, 'do_popup'));
-        }
+        add_action('wp_enqueue_scripts', array($this, 'enqueue_assets'));
+        add_action('wp_footer', array($this, 'do_popup'));
     }
 
     function enqueue_assets(){

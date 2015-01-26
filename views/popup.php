@@ -1,4 +1,4 @@
-<div id="cookie-popup">
+<div id="cookie-popup" class="accepted">
 	<div class="inner">
 
 		<div class="notice">
